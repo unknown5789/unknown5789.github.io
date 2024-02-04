@@ -1,4 +1,9 @@
 // oneko.js: https://github.com/adryd325/oneko.js
+var nekoSpeed = 10;
+
+function changeNekoSpeed(){
+  nekoSpeed += 10;
+}
 
 (function oneko() {
   const nekoEl = document.createElement("div");
@@ -22,7 +27,7 @@
   let idleAnimation = null;
   let idleAnimationFrame = 0;
 
-  const nekoSpeed = 10;
+
   const spriteSets = {
     idle: [[-3, -3]],
     alert: [[-7, -3]],
